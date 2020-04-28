@@ -418,6 +418,11 @@
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
+<!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+      manually by the user. Off by default, since the expected haptic feedback may not be
+      available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
+
     <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
