@@ -1,2 +1,4 @@
 hal_client_domain(system_app, hal_mlipay)
 get_prop(system_app, persist_camera_prop);
+allow system_app vendor_default_prop:file { getattr open read };
+allow system_app vendor_default_prop:file {map};
