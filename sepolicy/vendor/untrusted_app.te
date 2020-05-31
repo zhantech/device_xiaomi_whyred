@@ -8,5 +8,7 @@ allow untrusted_app vendor_firmware_file:dir { getattr };
 allow untrusted_app vendor_file:file { getattr };
 allow untrusted_app selinuxfs:file { read };
 allow untrusted_app hal_memtrack_hwservice:hwservice_manager { find };
+allow untrusted_app sysfs_kgsl:dir { search };
+allow untrusted_app sysfs_kgsl:lnk_file { read open getattr };
 get_prop(untrusted_app, persist_camera_prop)  
 get_prop(untrusted_app, camera_prop)  

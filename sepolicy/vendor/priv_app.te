@@ -9,3 +9,6 @@ allow priv_app sysfs_graphics:file { open  read };
 allow priv_app vendor_camera_prop:file { read open getattr };
 allow priv_app vendor_default_prop:file { read open getattr };
 allow priv_app mnt_vendor_file:dir { search };
+allow priv_app sysfs_kgsl:lnk_file { getattr open read };
+allow priv_app proc_interrupts:file { getattr open read };
+allow priv_app proc_modules:file { open read getattr };
