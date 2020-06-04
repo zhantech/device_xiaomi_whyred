@@ -1,3 +1,4 @@
 # Allow init to chown/chmod on pseudo files in /sys
 allow init sysfs_type:file { setattr };
 allow init hal_perf_default:binder { call };
+allow init vendor_file:file { execute };
