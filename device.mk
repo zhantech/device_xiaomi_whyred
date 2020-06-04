@@ -32,6 +32,10 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-4096-dalvi
 # Inherit properties.mk
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
+# AuthSecret 
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0-service
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
