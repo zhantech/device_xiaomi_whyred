@@ -74,6 +74,11 @@ public class DeviceSettings extends PreferenceFragment implements
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
 
+    public static final String PREF_MSM_TOUCHBOOST = "touchboost";
+    public static final String MSM_TOUCHBOOST_PATH = "/sys/module/msm_performance/parameters/touchboost";
+    private SecureSettingSwitchPreference mTouchboost;
+
+
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.xiaomiparts_preferences, rootKey);
@@ -95,6 +100,15 @@ public class DeviceSettings extends PreferenceFragment implements
         torch_brightness.setEnabled(FileUtils.fileWritable(TORCH_1_BRIGHTNESS_PATH) &&
                 FileUtils.fileWritable(TORCH_2_BRIGHTNESS_PATH));
         torch_brightness.setOnPreferenceChangeListener(this);
+
+
+        if (FileUtils.fileWritable(MSM_TOUCHBOOST_PATH)) {
+            mTouchboost = (SecureSettingSwitchPreference) findPreference(PREF_MSM_TOUCHBOOST);
+            mTouchboost.setChecked(FileUtils.getFileValueAsBoolean(MSM_TOUCHBOOST_PATH, true));
+            mTouchboost.setOnPreferenceChangeListener(this);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(PREF_MSM_TOUCHBOOST));
+        }
 
         boolean enhancerEnabled;
         try {
@@ -223,6 +237,10 @@ public class DeviceSettings extends PreferenceFragment implements
                   setSelinuxEnabled(mSelinuxMode.isChecked(), (Boolean) value);
                   return true;
                 }
+                break;
+
+            case PREF_MSM_TOUCHBOOST:
+                FileUtils.setValue(MSM_TOUCHBOOST_PATH, (boolean) value);
                 break;
 
             case PREF_KEY_FPS_INFO:

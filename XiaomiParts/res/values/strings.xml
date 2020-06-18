@@ -190,6 +190,12 @@
     <string name="quick_settings_log_tile_label">LogTile</string>
     <string name="quick_settings_log_tile_dialog_title">Options</string>
     <string name="cannot_get_su">Action failed because of missing superuser access</string>
+
+    <!-- Touchboost -->
+    <string name="boost_title">Boost</string>
+    <string name="touchboost_title">Enable Touchboost</string>
+    <string name="touchboost_summary">Boost CPU when touch detected for smooth experience</string>
+
  
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
