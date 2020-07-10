@@ -8,6 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=192 \
     ro.vendor.audio.sdk.fluencetype=fluence \
+    persist.audio.fluence.voicecomm=true \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.fluence.speaker=true \
