@@ -23,6 +23,7 @@
 
 # Inherit properties
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
+$(call inherit-product, $(LOCAL_PATH)/product.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Overlays
