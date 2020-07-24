@@ -431,6 +431,10 @@
       available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
+     <!-- Specify custom blanking delay of the display -->
+     <integer name="config_screen_off_delay">0</integer>
+
+
     <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
