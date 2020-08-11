@@ -434,8 +434,10 @@
      <!-- Specify custom blanking delay of the display -->
      <integer name="config_screen_off_delay">0</integer>
 
+       <!-- Indicates that connected MAC randomization is supported on this device -->
+    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
 
-    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+      <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
