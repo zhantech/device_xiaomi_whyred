@@ -72,11 +72,6 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay 
 
-
-# Recorder
-PRODUCT_PACKAGES += \
-    KimciRecorder
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
