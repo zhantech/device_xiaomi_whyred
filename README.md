@@ -1,28 +1,28 @@
-The Xiaomi Redmi Note 6 Pro (codenamed _"tulip"_) is a mid-range smartphone from Xiaomi announced in September 2018.
+The Xiaomi Redmi Note 5 Pro (codenamed _"whyred"_) is a mid-range smartphone from Xiaomi announced in Feb 2018.
 
 ## Device specifications
 
-| Device                  | Xiaomi Redmi Note 6 Pro                                     |
+| Device                  | Xiaomi Redmi Note 5 Pro                                     |
 | ----------------------- | :---------------------------------------------------------- |
-| SoC                     | Qualcomm SDM660 Snapdragon 636                              |
+| SoC                     | Qualcomm SDM636 Snapdragon 636 (14 nm)                      |
 | CPU                     | 8x Qualcomm® Kryo™ 260 CPU                                  |
 | GPU                     | Adreno 509                                                  |
 | Memory                  | 4GB / 6GB RAM (LPDDR4X)                                     |
-| Shipped Android version | 8.1.0                                                       |
+| Shipped Android version | Android 7.1.2 (Nougat)                                      |
 | Storage                 | 64GB eMMC 5.1 flash storage                                 |
 | MicroSD                 | Up to 256 GB                                                |
 | Battery                 | Non-removable Li-Po 4000 mAh                                |
-| Dimensions              | 157.9 x 76.4 x 8.3 mm                                       |
-| Display                 | 2280 x 1080 (19:9), 6.26 inch                               |
-| Rear camera 1           | 12 MP, f/1.9, 1/2.55", 1.4µm, dual pixel PDAF               |
-| Rear camera 2           | 5 MP, f/2.2, 1.12µm, depth sensor                           |
-| Front camera 1          | 20 MP, f/2.0, 0.9µm                                         |
-| Front camera 2          | 2 MP, f/2.2, 1.75µm, depth sensor                           |
+| Dimensions              | 158.6 x 75.4 x 8.1 mm (6.24 x 2.97 x 0.32 in)               |
+| Display                 | 5.99 inches, 92.6 cm2 (~77.4% screen-to-body ratio)         |
+| Rear camera 1           | 12 MP, f/2.2, 1/2.9", 1.25µm, PDAF                          |
+| Rear camera 2           | 5 MP, f/2.0, (depth)                                        |
+| Front camera            | 20 MP, f/2.2, (wide), 1/3", 0.9µm                           |
+
 
 
 ## Device picture
 
-![Xiaomi Redmi Note 6 Pro](https://img.timesnownews.com/story/1544521578-Xiaomi_Redmi_Note_6_Pro_colours.jpg)
+![Xiaomi Redmi Note 5 Pro](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-5-pro-2.jpg)
 
 ## Copyright
 
