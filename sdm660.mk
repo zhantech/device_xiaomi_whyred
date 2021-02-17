@@ -162,9 +162,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
+# MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Charger
 include $(LOCAL_PATH)/rootdir/charger/charger.mk
