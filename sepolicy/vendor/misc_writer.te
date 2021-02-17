@@ -1,2 +1,0 @@
-allow misc_writer proc_cmdline:file { getattr  open read };
-allow misc_writer unlabeled:file { getattr  open read };
