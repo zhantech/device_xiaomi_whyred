@@ -12,4 +12,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="rr_maintainer_summary">ZHANtech™</string>
+
+    <!-- Device Specification -->
+    <string name="cpu_message">4x1.8 GHz, 4x1.6 GHz Kryo 260</string>
+    <string name="camera_message">12MP and 13MP</string>
+    <string name="display_message">1080 x 2160, 5.99 inches</string>
+    <string name="rom_message">Adreno 509</string>
+    <string name="soc_message">Snapdragon 636</string>
+
 </resources>
