@@ -1,7 +1,7 @@
 
 
 #Build FP to be picked by both system and vendor
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys"
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
