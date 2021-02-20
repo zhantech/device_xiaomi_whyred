@@ -25,9 +25,9 @@ VENDOR=xiaomi
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
+RR_ROOT="$MY_DIR"/../../..
 
-HELPER="$LINEAGE_ROOT"/vendor/carbon/build/tools/extract_utils.sh
+HELPER="$RR_ROOT"/vendor/rr/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -61,7 +61,7 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
+setup_vendor "$DEVICE" "$VENDOR" "$RR_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" \
     "${KANG}" --section "${SECTION}"
@@ -69,11 +69,11 @@ extract "$MY_DIR"/proprietary-files.txt "$SRC" \
 extract "$MY_DIR"/proprietary-camera-files.txt "$SRC" \
     "${KANG}" --section "${SECTION}"
 
-GOODIX="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libgf_ca.so
+GOODIX="$RR_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libgf_ca.so
 
 sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" $GOODIX
 
-BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+BLOB_ROOT="$RR_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "$BLOB_ROOT"/vendor/bin/mlipayd@1.1
 patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "$BLOB_ROOT"/vendor/lib64/libmlipay.so
