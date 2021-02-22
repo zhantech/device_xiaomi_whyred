@@ -37,6 +37,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := rr_whyred
 PRODUCT_MODEL := Redmi Note 5 Pro
 
+# Launcher
+TARGET_LAUNCHER := lawnchair
+
 # Faceunlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
